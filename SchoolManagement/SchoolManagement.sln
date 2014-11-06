@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement", "SchoolManagement.csproj", "{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup1", "..\Setup1\Setup1.isproj", "{939C2AF0-A50A-4FB5-A7FD-E45291689845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|x86 = Debug|x86
+		DVD-5|x86 = DVD-5|x86
+		Release|x86 = Release|x86
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.CD_ROM|x86.ActiveCfg = Release|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.CD_ROM|x86.Build.0 = Release|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.Debug|x86.ActiveCfg = Debug|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.Debug|x86.Build.0 = Debug|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.DVD-5|x86.ActiveCfg = Debug|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.DVD-5|x86.Build.0 = Debug|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.Release|x86.ActiveCfg = Release|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.Release|x86.Build.0 = Release|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.SingleImage|x86.ActiveCfg = Release|x86
+		{0EAEDE2D-0FDB-428D-BA6E-A3A51D21F303}.SingleImage|x86.Build.0 = Release|x86
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.CD_ROM|x86.ActiveCfg = CD_ROM
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.CD_ROM|x86.Build.0 = CD_ROM
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.Debug|x86.ActiveCfg = DVD-5
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.Debug|x86.Build.0 = DVD-5
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.DVD-5|x86.ActiveCfg = DVD-5
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.DVD-5|x86.Build.0 = DVD-5
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.Release|x86.ActiveCfg = SingleImage
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.Release|x86.Build.0 = SingleImage
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.SingleImage|x86.ActiveCfg = SingleImage
+		{939C2AF0-A50A-4FB5-A7FD-E45291689845}.SingleImage|x86.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

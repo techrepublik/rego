@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C7A381C-5674-42B0-982F-D832C04CCBBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenDataLayer</RootNamespace>
+    <AssemblyName>GenDataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ES.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repo\DataRepository.cs" />
+    <Compile Include="repo\entities\AssessEntity.cs" />
+    <Compile Include="repo\entities\AssessmentEntity.cs" />
+    <Compile Include="repo\entities\BarangayEntity.cs" />
+    <Compile Include="repo\entities\CourseEntity.cs" />
+    <Compile Include="repo\entities\CourseMajorEntity.cs" />
+    <Compile Include="repo\entities\CourseMinorEntity.cs" />
+    <Compile Include="repo\entities\CourseSecScheduleEntity.cs" />
+    <Compile Include="repo\entities\CourseYearSectionEntity.cs" />
+    <Compile Include="repo\entities\DepartmentSubjectEntity.cs" />
+    <Compile Include="repo\entities\DepartmentTeacherEntity.cs" />
+    <Compile Include="repo\entities\LaboratoryFeeEntity.cs" />
+    <Compile Include="repo\entities\LaboratoryFeesEntity.cs" />
+    <Compile Include="repo\entities\LaboratorySubjectEntity.cs" />
+    <Compile Include="repo\entities\MunCityEntity.cs" />
+    <Compile Include="repo\entities\PostGradeEntity.cs" />
+    <Compile Include="repo\entities\PresetFeeEntity.cs" />
+    <Compile Include="repo\entities\ProspectusSubjectEntity.cs" />
+    <Compile Include="repo\entities\ProspectusSubjectPreReqEntity.cs" />
+    <Compile Include="repo\entities\ReceiptDetailEntity.cs" />
+    <Compile Include="repo\entities\ReceiptEntity.cs" />
+    <Compile Include="repo\entities\RegisteredSubjectEntity.cs" />
+    <Compile Include="repo\entities\RegistrationEntity.cs" />
+    <Compile Include="repo\entities\ScheduleDetailEntity.cs" />
+    <Compile Include="repo\entities\ScheduleEntity.cs" />
+    <Compile Include="repo\entities\ScheduleFeesEntity.cs" />
+    <Compile Include="repo\entities\SchedulingEntity.cs" />
+    <Compile Include="repo\entities\ScholarshipFeeEntity.cs" />
+    <Compile Include="repo\entities\SemSyEntity.cs" />
+    <Compile Include="repo\entities\SetPresetFeeEntity.cs" />
+    <Compile Include="repo\entities\StreetEntity.cs" />
+    <Compile Include="repo\entities\StudentBalanceEntity.cs" />
+    <Compile Include="repo\entities\StudentEntity.cs" />
+    <Compile Include="repo\entities\StudentLedgerEntity.cs" />
+    <Compile Include="repo\entities\StudentSubjectEntity.cs" />
+    <Compile Include="repo\entities\SubjectEntity.cs" />
+    <Compile Include="repo\entities\SubjectStudentEntity.cs" />
+    <Compile Include="repo\entities\TeacherEntity.cs" />
+    <Compile Include="repo\entities\TeacherSubjectEntity.cs" />
+    <Compile Include="repo\entities\UserEntity.cs" />
+    <Compile Include="repo\entities\YearLevelCourseSectionSemSyEntity.cs" />
+    <Compile Include="repo\IDataRepository.cs" />
+    <Compile Include="repo\managers\AcademicQueries.cs" />
+    <Compile Include="repo\managers\CompiledQueries.cs" />
+    <Compile Include="repo\managers\FinanceQueries.cs" />
+    <Compile Include="repo\managers\LoadQueries.cs" />
+    <Compile Include="repo\managers\man\AlliedSchoolsManager.cs" />
+    <Compile Include="repo\managers\man\AssessmentManager.cs" />
+    <Compile Include="repo\managers\man\DepartmentTeacherManager.cs" />
+    <Compile Include="repo\managers\man\EducationLevelManager.cs" />
+    <Compile Include="repo\managers\man\PostGradeManager.cs" />
+    <Compile Include="repo\managers\man\PostModeManager.cs" />
+    <Compile Include="repo\managers\man\ReceiptDetailManager.cs" />
+    <Compile Include="repo\managers\man\ReceiptManager.cs" />
+    <Compile Include="repo\managers\man\RequirementManager.cs" />
+    <Compile Include="repo\managers\man\ScheduleManager.cs" />
+    <Compile Include="repo\managers\man\StudentEducationManager.cs" />
+    <Compile Include="repo\managers\man\StudentRequirementManager.cs" />
+    <Compile Include="repo\managers\man\TeacherSubjectManager.cs" />
+    <Compile Include="repo\managers\ObjectQueries.cs" />
+    <Compile Include="repo\managers\Remove.cs" />
+    <Compile Include="repo\managers\Save.cs" />
+    <Compile Include="repo\managers\Validation.cs" />
+    <Compile Include="repo\reportingentities\PrintClassList.cs" />
+    <Compile Include="repo\reportingentities\PrintEnrolleeDepartmentClass.cs" />
+    <Compile Include="repo\reportingentities\PrintFeeClass.cs" />
+    <Compile Include="repo\reportingentities\PrintPresetFeeClass.cs" />
+    <Compile Include="repo\reportingentities\PrintProspectusClass.cs" />
+    <Compile Include="repo\reportingentities\PrintReceiptClass.cs" />
+    <Compile Include="repo\reportingentities\PrintReceiptDetailClass.cs" />
+    <Compile Include="repo\reportingentities\PrintScheduleClass.cs" />
+    <Compile Include="repo\reportingentities\PrintScheduleFeeClass.cs" />
+    <Compile Include="repo\reportingentities\PrintStudentClass.cs" />
+    <Compile Include="repo\reportingentities\PrintStudentListClass.cs" />
+    <Compile Include="repo\reportingentities\PrintSubjectEnrolleeCountClass.cs" />
+    <Compile Include="repo\statics\GenericSingleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ES.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ES.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\ESEntities1.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.MunCityEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.PostGradeEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ProspectusSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintReceiptDetailClass.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

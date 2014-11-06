@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46209395-E452-4022-8928-2FE5A133B2EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Module_1___School_Management_Central_Administration</RootNamespace>
+    <AssemblyName>Module 1 - School Management Central Administration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\acc\AccountListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\AccountListForm.Designer.cs">
+      <DependentUpon>AccountListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\FeeSubTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\FeeSubTitleForm.Designer.cs">
+      <DependentUpon>FeeSubTitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\LaboratoryFeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\LaboratoryFeeListForm.Designer.cs">
+      <DependentUpon>LaboratoryFeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\ListOfReceiptsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\ListOfReceiptsForm.Designer.cs">
+      <DependentUpon>ListOfReceiptsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\PresetFeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\PresetFeeListForm.Designer.cs">
+      <DependentUpon>PresetFeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\ReportListReceiptsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\ReportListReceiptsForm.Designer.cs">
+      <DependentUpon>ReportListReceiptsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\ScheduleFeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\ScheduleFeeListForm.Designer.cs">
+      <DependentUpon>ScheduleFeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\ScholarshipListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\ScholarshipListForm.Designer.cs">
+      <DependentUpon>ScholarshipListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\StudentBalancesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\StudentBalancesForm.Designer.cs">
+      <DependentUpon>StudentBalancesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\StudentLedgerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\StudentLedgerForm.Designer.cs">
+      <DependentUpon>StudentLedgerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\StudentSearchTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\StudentSearchTreeForm.Designer.cs">
+      <DependentUpon>StudentSearchTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateAssessmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateAssessmentForm.Designer.cs">
+      <DependentUpon>UpdateAssessmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateFeeParticularForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateFeeParticularForm.Designer.cs">
+      <DependentUpon>UpdateFeeParticularForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateFeeTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateFeeTitleForm.Designer.cs">
+      <DependentUpon>UpdateFeeTitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateGrossAmountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateGrossAmountForm.Designer.cs">
+      <DependentUpon>UpdateGrossAmountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateLabSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateLabSubjectForm.Designer.cs">
+      <DependentUpon>UpdateLabSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdatePresetFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdatePresetFeeForm.Designer.cs">
+      <DependentUpon>UpdatePresetFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScheduleFeeNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScheduleFeeNameForm.Designer.cs">
+      <DependentUpon>UpdateScheduleFeeNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScholarshipFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScholarshipFeeForm.Designer.cs">
+      <DependentUpon>UpdateScholarshipFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScholarshipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateScholarshipForm.Designer.cs">
+      <DependentUpon>UpdateScholarshipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\acc\UpdateSetFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\acc\UpdateSetFeeForm.Designer.cs">
+      <DependentUpon>UpdateSetFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\adm\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\adm\UserListForm.Designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\adm\UserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\adm\UserUpdateForm.Designer.cs">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\AssignSubjectTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\AssignSubjectTeacherForm.Designer.cs">
+      <DependentUpon>AssignSubjectTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\BranchCollegeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\BranchCollegeForm.Designer.cs">
+      <DependentUpon>BranchCollegeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\CollegeRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\CollegeRoomForm.Designer.cs">
+      <DependentUpon>CollegeRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\CollegeUnitListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\CollegeUnitListForm.Designer.cs">
+      <DependentUpon>CollegeUnitListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\CourseSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\CourseSubjectForm.Designer.cs">
+      <DependentUpon>CourseSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentSubjectForm.Designer.cs">
+      <DependentUpon>DepartmentSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentTeacherExploreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentTeacherExploreForm.Designer.cs">
+      <DependentUpon>DepartmentTeacherExploreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentTeacherListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\DepartmentTeacherListForm.Designer.cs">
+      <DependentUpon>DepartmentTeacherListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusForm.Designer.cs">
+      <DependentUpon>ProspectusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusSelectSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusSelectSubjectForm.Designer.cs">
+      <DependentUpon>ProspectusSelectSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusSemYrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusSemYrForm.Designer.cs">
+      <DependentUpon>ProspectusSemYrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusUpdateSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ProspectusUpdateSubjectForm.Designer.cs">
+      <DependentUpon>ProspectusUpdateSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleListForm.Designer.cs">
+      <DependentUpon>ScheduleListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleUpdateManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleUpdateManagementForm.Designer.cs">
+      <DependentUpon>ScheduleUpdateManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleUpdateSemSyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\ScheduleUpdateSemSyForm.Designer.cs">
+      <DependentUpon>ScheduleUpdateSemSyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\SchoolBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\SchoolBranchForm.Designer.cs">
+      <DependentUpon>SchoolBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\SelectProspectusCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\SelectProspectusCourseForm.Designer.cs">
+      <DependentUpon>SelectProspectusCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\FinalScreeningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\FinalScreeningForm.Designer.cs">
+      <DependentUpon>FinalScreeningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\PostGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\PostGradeForm.Designer.cs">
+      <DependentUpon>PostGradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\PostGradeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\PostGradeListForm.Designer.cs">
+      <DependentUpon>PostGradeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\RegistrarPreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\RegistrarPreferencesForm.Designer.cs">
+      <DependentUpon>RegistrarPreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\StudentAcademicRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\StudentAcademicRecordForm.Designer.cs">
+      <DependentUpon>StudentAcademicRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\SubjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\SubjectListForm.Designer.cs">
+      <DependentUpon>SubjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCollegeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCollegeForm.Designer.cs">
+      <DependentUpon>UpdateCollegeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCollegeWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCollegeWizardForm.Designer.cs">
+      <DependentUpon>UpdateCollegeWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\UpdateCourseForm.Designer.cs">
+      <DependentUpon>UpdateCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\UpdateDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\UpdateDepartmentForm.Designer.cs">
+      <DependentUpon>UpdateDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\csm\UpdateDepartmentSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\csm\UpdateDepartmentSubjectForm.Designer.cs">
+      <DependentUpon>UpdateDepartmentSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\gen\LookUpTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\gen\LookUpTableForm.Designer.cs">
+      <DependentUpon>LookUpTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\gen\PreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\gen\PreferencesForm.Designer.cs">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\AddressListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\AddressListForm.Designer.cs">
+      <DependentUpon>AddressListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\AddressUpdateWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\AddressUpdateWizardForm.Designer.cs">
+      <DependentUpon>AddressUpdateWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\AssignStudentBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\AssignStudentBranchForm.Designer.cs">
+      <DependentUpon>AssignStudentBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\ClassListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\ClassListForm.Designer.cs">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\EnrollmentSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\EnrollmentSummaryForm.Designer.cs">
+      <DependentUpon>EnrollmentSummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\StudentGradeEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\StudentGradeEntryForm.Designer.cs">
+      <DependentUpon>StudentGradeEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\StudentlistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\StudentlistForm.Designer.cs">
+      <DependentUpon>StudentlistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\StudentProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\StudentProfileForm.Designer.cs">
+      <DependentUpon>StudentProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\StudentSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\StudentSearchForm.Designer.cs">
+      <DependentUpon>StudentSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\TeacherListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\TeacherListForm.Designer.cs">
+      <DependentUpon>TeacherListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateBarangayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateBarangayForm.Designer.cs">
+      <DependentUpon>UpdateBarangayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateGradeBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateGradeBaseForm.Designer.cs">
+      <DependentUpon>UpdateGradeBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateMunCityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateMunCityForm.Designer.cs">
+      <DependentUpon>UpdateMunCityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateProvinceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateProvinceForm.Designer.cs">
+      <DependentUpon>UpdateProvinceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateStreetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateStreetForm.Designer.cs">
+      <DependentUpon>UpdateStreetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateStudentPictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateStudentPictureForm.Designer.cs">
+      <DependentUpon>UpdateStudentPictureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reg\UpdateTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reg\UpdateTeacherForm.Designer.cs">
+      <DependentUpon>UpdateTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\rpt\ReportClassListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\rpt\ReportClassListForm.Designer.cs">
+      <DependentUpon>ReportClassListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\rpt\ReportProspectusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\rpt\ReportProspectusForm.Designer.cs">
+      <DependentUpon>ReportProspectusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\rpt\ReportSummaryByCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\rpt\ReportSummaryByCourseForm.Designer.cs">
+      <DependentUpon>ReportSummaryByCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\rpt\RepostListReceiptsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\rpt\RepostListReceiptsForm.Designer.cs">
+      <DependentUpon>RepostListReceiptsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\spr\StudentListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\spr\StudentListForm.Designer.cs">
+      <DependentUpon>StudentListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\spr\StudentProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\spr\StudentProfileForm.Designer.cs">
+      <DependentUpon>StudentProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\acc\AccountListForm.resx">
+      <DependentUpon>AccountListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\FeeSubTitleForm.resx">
+      <DependentUpon>FeeSubTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\LaboratoryFeeListForm.resx">
+      <DependentUpon>LaboratoryFeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\ListOfReceiptsForm.resx">
+      <DependentUpon>ListOfReceiptsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\PresetFeeListForm.resx">
+      <DependentUpon>PresetFeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\ReportListReceiptsForm.resx">
+      <DependentUpon>ReportListReceiptsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\ScheduleFeeListForm.resx">
+      <DependentUpon>ScheduleFeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\ScholarshipListForm.resx">
+      <DependentUpon>ScholarshipListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\StudentBalancesForm.resx">
+      <DependentUpon>StudentBalancesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\StudentLedgerForm.resx">
+      <DependentUpon>StudentLedgerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\StudentSearchTreeForm.resx">
+      <DependentUpon>StudentSearchTreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateAssessmentForm.resx">
+      <DependentUpon>UpdateAssessmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateFeeParticularForm.resx">
+      <DependentUpon>UpdateFeeParticularForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateFeeTitleForm.resx">
+      <DependentUpon>UpdateFeeTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateGrossAmountForm.resx">
+      <DependentUpon>UpdateGrossAmountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateLabSubjectForm.resx">
+      <DependentUpon>UpdateLabSubjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdatePresetFeeForm.resx">
+      <DependentUpon>UpdatePresetFeeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateScheduleFeeNameForm.resx">
+      <DependentUpon>UpdateScheduleFeeNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateScholarshipFeeForm.resx">
+      <DependentUpon>UpdateScholarshipFeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateScholarshipForm.resx">
+      <DependentUpon>UpdateScholarshipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\acc\UpdateSetFeeForm.resx">
+      <DependentUpon>UpdateSetFeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\adm\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\adm\UserUpdateForm.resx">
+      <DependentUpon>UserUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\AssignSubjectTeacherForm.resx">
+      <DependentUpon>AssignSubjectTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\BranchCollegeForm.resx">
+      <DependentUpon>BranchCollegeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\CollegeRoomForm.resx">
+      <DependentUpon>CollegeRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\CollegeUnitListForm.resx">
+      <DependentUpon>CollegeUnitListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\CourseSubjectForm.resx">
+      <DependentUpon>CourseSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\DepartmentSubjectForm.resx">
+      <DependentUpon>DepartmentSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\DepartmentTeacherExploreForm.resx">
+      <DependentUpon>DepartmentTeacherExploreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\DepartmentTeacherListForm.resx">
+      <DependentUpon>DepartmentTeacherListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ProspectusForm.resx">
+      <DependentUpon>ProspectusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ProspectusSelectSubjectForm.resx">
+      <DependentUpon>ProspectusSelectSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ProspectusSemYrForm.resx">
+      <DependentUpon>ProspectusSemYrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ProspectusUpdateSubjectForm.resx">
+      <DependentUpon>ProspectusUpdateSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ScheduleListForm.resx">
+      <DependentUpon>ScheduleListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ScheduleUpdateManagementForm.resx">
+      <DependentUpon>ScheduleUpdateManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\ScheduleUpdateSemSyForm.resx">
+      <DependentUpon>ScheduleUpdateSemSyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\SchoolBranchForm.resx">
+      <DependentUpon>SchoolBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\SelectProspectusCourseForm.resx">
+      <DependentUpon>SelectProspectusCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\FinalScreeningForm.resx">
+      <DependentUpon>FinalScreeningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\PostGradeForm.resx">
+      <DependentUpon>PostGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\PostGradeListForm.resx">
+      <DependentUpon>PostGradeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\RegistrarPreferencesForm.resx">
+      <DependentUpon>RegistrarPreferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\StudentAcademicRecordForm.resx">
+      <DependentUpon>StudentAcademicRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\SubjectListForm.resx">
+      <DependentUpon>SubjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\UpdateCollegeForm.resx">
+      <DependentUpon>UpdateCollegeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\UpdateCollegeWizardForm.resx">
+      <DependentUpon>UpdateCollegeWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\UpdateCourseForm.resx">
+      <DependentUpon>UpdateCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\UpdateDepartmentForm.resx">
+      <DependentUpon>UpdateDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\csm\UpdateDepartmentSubjectForm.resx">
+      <DependentUpon>UpdateDepartmentSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\gen\LookUpTableForm.resx">
+      <DependentUpon>LookUpTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\gen\PreferencesForm.resx">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\AddressListForm.resx">
+      <DependentUpon>AddressListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\AddressUpdateWizardForm.resx">
+      <DependentUpon>AddressUpdateWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\AssignStudentBranchForm.resx">
+      <DependentUpon>AssignStudentBranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\ClassListForm.resx">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\EnrollmentSummaryForm.resx">
+      <DependentUpon>EnrollmentSummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\StudentGradeEntryForm.resx">
+      <DependentUpon>StudentGradeEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\StudentlistForm.resx">
+      <DependentUpon>StudentlistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\StudentProfileForm.resx">
+      <DependentUpon>StudentProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\StudentSearchForm.resx">
+      <DependentUpon>StudentSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\TeacherListForm.resx">
+      <DependentUpon>TeacherListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateBarangayForm.resx">
+      <DependentUpon>UpdateBarangayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateGradeBaseForm.resx">
+      <DependentUpon>UpdateGradeBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateMunCityForm.resx">
+      <DependentUpon>UpdateMunCityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateProvinceForm.resx">
+      <DependentUpon>UpdateProvinceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateStreetForm.resx">
+      <DependentUpon>UpdateStreetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateStudentPictureForm.resx">
+      <DependentUpon>UpdateStudentPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reg\UpdateTeacherForm.resx">
+      <DependentUpon>UpdateTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\rpt\ReportClassListForm.resx">
+      <DependentUpon>ReportClassListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\rpt\ReportProspectusForm.resx">
+      <DependentUpon>ReportProspectusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\rpt\ReportSummaryByCourseForm.resx">
+      <DependentUpon>ReportSummaryByCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\rpt\RepostListReceiptsForm.resx">
+      <DependentUpon>RepostListReceiptsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\spr\StudentListForm.resx">
+      <DependentUpon>StudentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\spr\StudentProfileForm.resx">
+      <DependentUpon>StudentProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reports\enrollment\AccountListReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\ClassListReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\SummaryByDepartmentReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\ListOfStudents.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\InsuranceListReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\SummaryByCourseReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\SummaryByCrsYrSecReport.rdlc" />
+    <EmbeddedResource Include="reports\enrollment\SummaryByStudentCrsYrSecReport.rdlc" />
+    <EmbeddedResource Include="reports\feesetup\ScheduleFeeReport.rdlc" />
+    <EmbeddedResource Include="reports\finance\ReportListReceipts.rdlc" />
+    <EmbeddedResource Include="reports\prospectuses\ProspectusReport.rdlc" />
+    <EmbeddedResource Include="reports\prospectuses\SubjectAllReport.rdlc" />
+    <EmbeddedResource Include="reports\schedules\ScheduleAllReport.rdlc" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\GenDataLayer.AlliedSchool.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Assessment.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Attachment.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Barangay.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Branch.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.College.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Cours.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.CourseSecSchedule.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Department.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.DepartmentSubject.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.DepartmentTeacher.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.EducationLevel.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.EmpStatus.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.FeeParticular.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.FeeSubTitle.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.FeeTitle.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.GradeBas.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.GradeBaseValue.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.GradingPeriod.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.LaboratoryFee.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.MunCity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Position.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.PostGrade.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.PostMode.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Prospectus.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.ProspectusSemYr.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.ProspectusSubject.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Province.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.AssessEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.AssessmentEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.BarangayEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.CourseYearSectionEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.DepartmentSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.DepartmentTeacherEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.LaboratorySubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.MunCityEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.PostGradeEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.PresetFeeEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ProspectusSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ProspectusSubjectPreReqEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ReceiptDetailEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.RegisteredSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.RegistrationEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.SchedulingEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ScholarshipFeeEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.SemSyEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StreetEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StudentBalanceEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StudentEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StudentLedgerEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StudentSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.SubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.SubjectStudentEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.TeacherEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.TeacherSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.YearLevelCourseSectionSemSyEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintEnrolleeDepartmentClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintFeeClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintProspectusClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintReceiptClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintScheduleClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintScheduleFeeClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.reportingentities.PrintStudentClass.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Requirement.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Room.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.ScheduleDetail.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.ScheduleFee.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.ScheduleFeeName.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Scholarship.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.SchoolEducation.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Section.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.SemSy.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.SetPresetFee.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StreetHous.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Student.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentPicture.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentRequirement.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentStatus.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentType.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Subject.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Teacher.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.TeacherSubject.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.User.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.UserLevel.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.YearLevel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GenDataLayer\GenDataLayer.csproj">
+      <Project>{5C7A381C-5674-42B0-982F-D832C04CCBBF}</Project>
+      <Name>GenDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityManager\UtilityManager.csproj">
+      <Project>{52F42C75-B40E-4FCA-9C57-3DAB29618A30}</Project>
+      <Name>UtilityManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browse 3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Window 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extensions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add to Favourites.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Optical Disk Aqua lime.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compose Email.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

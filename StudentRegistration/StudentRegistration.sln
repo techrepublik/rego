@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRegistration", "StudentRegistration.csproj", "{16615C79-33FB-4DA0-A3B9-57178A0D707A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://josh-pc:8080/tfs/myproject01
+		SccProjectUniqueName0 = StudentRegistration.csproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://josh-pc:8080/tfs/myproject01
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16615C79-33FB-4DA0-A3B9-57178A0D707A}.Debug|x86.ActiveCfg = Debug|x86
+		{16615C79-33FB-4DA0-A3B9-57178A0D707A}.Debug|x86.Build.0 = Debug|x86
+		{16615C79-33FB-4DA0-A3B9-57178A0D707A}.Release|x86.ActiveCfg = Release|x86
+		{16615C79-33FB-4DA0-A3B9-57178A0D707A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

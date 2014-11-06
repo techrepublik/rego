@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10FABBBB-2786-4283-8DB7-A85749623BA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Module_2___Registration</RootNamespace>
+    <AssemblyName>Module 2 - Registration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\AddDropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AddDropForm.Designer.cs">
+      <DependentUpon>AddDropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ClassListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ClassListForm.Designer.cs">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\CloseSchedulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CloseSchedulesForm.Designer.cs">
+      <DependentUpon>CloseSchedulesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\DropAddSubjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\DropAddSubjectListForm.Designer.cs">
+      <DependentUpon>DropAddSubjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ReceiptViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ReceiptViewerForm.Designer.cs">
+      <DependentUpon>ReceiptViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ReportCertificateRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ReportCertificateRegistrationForm.Designer.cs">
+      <DependentUpon>ReportCertificateRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SearchStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SearchStudentForm.Designer.cs">
+      <DependentUpon>SearchStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UpdateGetStudentRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateGetStudentRecordForm.Designer.cs">
+      <DependentUpon>UpdateGetStudentRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UpdateRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateRegForm.Designer.cs">
+      <DependentUpon>UpdateRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UpdateRegistrrtionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateRegistrrtionForm.Designer.cs">
+      <DependentUpon>UpdateRegistrrtionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module2MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2MainForm.Designer.cs">
+      <DependentUpon>Module2MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\AddDropForm.resx">
+      <DependentUpon>AddDropForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ClassListForm.resx">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\CloseSchedulesForm.resx">
+      <DependentUpon>CloseSchedulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DropAddSubjectListForm.resx">
+      <DependentUpon>DropAddSubjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ReceiptViewerForm.resx">
+      <DependentUpon>ReceiptViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ReportCertificateRegistrationForm.resx">
+      <DependentUpon>ReportCertificateRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SearchStudentForm.resx">
+      <DependentUpon>SearchStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UpdateGetStudentRecordForm.resx">
+      <DependentUpon>UpdateGetStudentRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UpdateRegForm.resx">
+      <DependentUpon>UpdateRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UpdateRegistrrtionForm.resx">
+      <DependentUpon>UpdateRegistrrtionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module2MainForm.resx">
+      <DependentUpon>Module2MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reports\CertificateOfRegistration.rdlc" />
+    <None Include="Properties\DataSources\GenDataLayer.Branch.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.College.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Cours.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Prospectus.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.AssessEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.CourseSecScheduleEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.RegisteredSubjectEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.RegistrationEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ScheduleEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.ScheduleFeesEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.SemSyEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.StudentEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.repo.entities.UserEntity.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Scholarship.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Section.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.Student.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentStatus.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.StudentType.datasource" />
+    <None Include="Properties\DataSources\GenDataLayer.YearLevel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GenDataLayer\GenDataLayer.csproj">
+      <Project>{5c7a381c-5674-42b0-982f-d832c04ccbbf}</Project>
+      <Name>GenDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UtilityManager\UtilityManager.csproj">
+      <Project>{52F42C75-B40E-4FCA-9C57-3DAB29618A30}</Project>
+      <Name>UtilityManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
