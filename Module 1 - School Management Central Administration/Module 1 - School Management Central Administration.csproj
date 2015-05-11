@@ -56,15 +56,42 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
-    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
-    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
-    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
-    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
-    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinStatusBar.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabbedMdi.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabControl.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinToolbars.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v12.1.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
